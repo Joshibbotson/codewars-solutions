@@ -30,11 +30,19 @@ function solution(number) {
         },
     ]
 
-    const splitNumIntoArr = number.toString().split("")
+    const splitNum = number.toString().split("")
+    const length = splitNum.length
 
     for (let numeral of numeralArr) {
         console.log(`${numeral.symbol} : ${numeral.value}`)
+        if (number === numeral.value) {
+            return numeral.symbol
+        } else {
+            for (let i = 0; i < length; i++) {
+                splitNum[length - 1]
+            }
+        }
     }
 }
 
-console.log(solution(1000))
+console.log(solution(2345))
